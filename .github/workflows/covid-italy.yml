@@ -19,12 +19,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
       - name: fetch data
-      - run: |-
+        run: |-
           curl https://api.covid19api.com/country/italy/status/confirmed/live | jq . > ~/italy_covid.json
       - name: commit and push changes if any
-      - run: |-
+        run: |-
           git config user.name "Automated"
           git config user.email "actions@users.noreply.github.com"
           git add -A
