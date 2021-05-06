@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v2
       - name: fetch data
         run: |-
-          curl https://api.covid19api.com/country/italy/status/confirmed/live | jq . > ~/italy_covid.json
+          curl https://api.covid19api.com/country/italy/status/confirmed/live | jq . > italy_covid.json
       - name: commit and push changes if any
         run: |-
           git config user.name "Automated"
