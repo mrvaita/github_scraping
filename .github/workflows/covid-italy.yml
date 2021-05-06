@@ -1,0 +1,33 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Scrape latest Covid-19 cases in Italy
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+  pull_request:
+  schedule:
+    - cron:  '1 * * * *'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  scheduled:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo
+      - uses: actions/checkout@v2
+      - name: fetch data
+      - run: |-
+          curl https://api.covid19api.com/country/italy/status/confirmed/live | jq . > ~/italy_covid.json
+      - name: commit and push changes if any
+      - run: |-
+          git config user.name "Automated"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          timestamp=$(date -u)
+          git commit -m "Latest data: ${timestamp}" || exit 0
+          git push
