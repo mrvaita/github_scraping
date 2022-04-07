@@ -9646,5 +9646,17 @@
     "Cases": 14877144,
     "Status": "confirmed",
     "Date": "2022-04-04T00:00:00Z"
+  },
+  {
+    "Country": "Italy",
+    "CountryCode": "IT",
+    "Province": "",
+    "City": "",
+    "CityCode": "",
+    "Lat": "41.87",
+    "Lon": "12.57",
+    "Cases": 14966058,
+    "Status": "confirmed",
+    "Date": "2022-04-05T00:00:00Z"
   }
 ]
