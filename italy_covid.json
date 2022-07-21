@@ -10855,9 +10855,33 @@
     "CityCode": "",
     "Lat": "41.87",
     "Lon": "12.57",
+    "Cases": 19887543,
+    "Status": "confirmed",
+    "Date": "2022-07-14T00:00:00Z"
+  },
+  {
+    "Country": "Italy",
+    "CountryCode": "IT",
+    "Province": "",
+    "City": "",
+    "CityCode": "",
+    "Lat": "41.87",
+    "Lon": "12.57",
     "Cases": 19985479,
     "Status": "confirmed",
     "Date": "2022-07-15T00:00:00Z"
+  },
+  {
+    "Country": "Italy",
+    "CountryCode": "IT",
+    "Province": "",
+    "City": "",
+    "CityCode": "",
+    "Lat": "41.87",
+    "Lon": "12.57",
+    "Cases": 20076863,
+    "Status": "confirmed",
+    "Date": "2022-07-16T00:00:00Z"
   },
   {
     "Country": "Italy",
@@ -10882,5 +10906,17 @@
     "Cases": 20177910,
     "Status": "confirmed",
     "Date": "2022-07-18T00:00:00Z"
+  },
+  {
+    "Country": "Italy",
+    "CountryCode": "IT",
+    "Province": "",
+    "City": "",
+    "CityCode": "",
+    "Lat": "41.87",
+    "Lon": "12.57",
+    "Cases": 20299013,
+    "Status": "confirmed",
+    "Date": "2022-07-19T00:00:00Z"
   }
 ]
